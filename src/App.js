@@ -131,7 +131,7 @@ class App extends Component {
               price: "17.5",
               tags: "",
               image: "/LMO/14.jpg",
-              description: "8hr beef brisket, aged cheddar, house slaw, chipotle mayo, gherkins, rye sourdough"
+              description: "8hr beef brisket, aged cheddar, house slaw, chipotle mayo..."
             },
             {
               id: "14",
@@ -139,7 +139,7 @@ class App extends Component {
               price: "19.5",
               tags: "",
               image: "/LMO/7.jpg",
-              description: "grass fed beef, crispy bacon, smoked cheese, tomato, bourbon caramelised onion, pickle, Dijon, lettuce, brioche..."
+              description: "grass fed beef, crispy bacon, smoked cheese, tomato, bourbon..."
             },
             {
               id: "15",
@@ -147,7 +147,7 @@ class App extends Component {
               price: "19.0",
               tags: "",
               image: "/LMO/7.jpg",
-              description: "cajun spiced crispy chicken, house slaw, jalapeno, chipotle mayo, lime, pickle, lettuce..."
+              description: "cajun spiced crispy chicken, house slaw, jalapeno, chipotle..."
             }
           ]
         }
