@@ -94,7 +94,7 @@ class App extends Component {
               price: "18.0",
               tags: "",
               image: "/LMO/8.jpg",
-              description: "slow cooked honey braised lamb, freekeh & mint tabouleh, white sourdough green leaves, cumin..."
+              description: "slow cooked honey braised lamb, freekeh & mint tabouleh..."
             },
             {
               id: "10",
