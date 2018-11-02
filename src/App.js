@@ -146,7 +146,7 @@ class App extends Component {
               name: "Southern Style Chicken Burger",
               price: "19.0",
               tags: "",
-              image: "/LMO/7.jpg",
+              image: "/LMO/8.jpg",
               description: "cajun spiced crispy chicken, house slaw, jalapeno, chipotle..."
             }
           ]
