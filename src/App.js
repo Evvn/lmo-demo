@@ -38,7 +38,7 @@ class App extends Component {
               price: "14.0",
               tags: "V",
               image: "/LMO/7.jpg",
-              description: "vanilla pannacotta, toasted granola, goji berries, hazelnut, fresh seasonal fruits, shaved coconut"
+              description: "vanilla pannacotta, toasted granola, goji berries, hazelnut..."
             },
             {
               id: "3",
@@ -54,7 +54,7 @@ class App extends Component {
               price: "16.5",
               tags: "V",
               image: "/LMO/7.jpg",
-              description: "minted pea & avocado smash, feta, poached egg, crispy quinoa, radish, pumpkin hummus, chili lime, sumac salt..."
+              description: "minted pea & avocado smash, feta, poached egg, crispy quinoa, radish, pumpkin hummus..."
             },
             {
               id: "5",
@@ -62,7 +62,7 @@ class App extends Component {
               price: "16.5",
               tags: "V",
               image: "/LMO/6.jpg",
-              description: "kimchi, charred sweet corn, house relish, pickled fennel, dukkah, turmeric yogurt, poached eggs"
+              description: "kimchi, charred sweet corn, house relish, pickled fennel, dukkah..."
             },
             {
               id: "6",
@@ -70,7 +70,7 @@ class App extends Component {
               price: "16.0",
               tags: "V, GF",
               image: "/LMO/7.jpg",
-              description: "spiced roasted chickpea, avocado, grilled broccolini & kale, edamame, quinoa, beetroot hummus, chilli lime, coriander, almonds..."
+              description: "spiced roasted chickpea, avocado, grilled broccolini & kale, edamame..."
             },
             {
               id: "7",
@@ -78,7 +78,7 @@ class App extends Component {
               price: "16.5",
               tags: "V, GF",
               image: "/LMO/8.jpg",
-              description: "grilled haloumi, ancient grains, roasted cauliflower, sweet potato, shredded kale, babaganoush, dukkah, baby spinach..."
+              description: "grilled haloumi, ancient grains, roasted cauliflower, sweet potato, shredded kale..."
             },
             {
               id: "8",
@@ -86,7 +86,7 @@ class App extends Component {
               price: "16.5",
               tags: "",
               image: "/LMO/9.jpg",
-              description: "poached chicken, ras-el-hanout spices, freekeh & wild rice, kalamata olive, cherry tomato, pumpkin hummus, rocket..."
+              description: "poached chicken, ras-el-hanout spices, freekeh & wild rice, kalamata olive, cherry tomato..."
             },
             {
               id: "9",
@@ -102,7 +102,7 @@ class App extends Component {
               price: "14.5",
               tags: "",
               image: "/LMO/7.jpg",
-              description: "chorizo & chilli scramble, manchego, confit tomato, kale pesto, rocket, coriander, sourdough"
+              description: "chorizo & chilli scramble, manchego, confit tomato, kale pesto, rocket..."
             },
             {
               id: "11",
@@ -110,7 +110,7 @@ class App extends Component {
               price: "17.0",
               tags: "",
               image: "/LMO/8.jpg",
-              description: "chilli baked beans, black pudding, feta, confit tomato, fried egg, sourdough"
+              description: "chilli baked beans, black pudding, feta, confit tomato, fried egg..."
             },
             {
               id: "12",
@@ -118,7 +118,7 @@ class App extends Component {
               price: "17.0",
               tags: "",
               image: "/LMO/13.jpg",
-              description: "spiced pulled pork, apple cider & beetroot hollandaise, poached eggs, spinach, brioche bun"
+              description: "spiced pulled pork, apple cider & beetroot hollandaise..."
             },
           ]
         },

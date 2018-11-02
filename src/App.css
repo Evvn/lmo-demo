@@ -234,7 +234,7 @@ header {
   height: 100vw;
 }
 .previewModal .previewName {
-  font-family: "SFUIDisplay-Semibold";
+  font-family: "SFUIDisplay-Semibold", "Helvetica", sans-serif;
   font-size: 22px;
   font-weight: 600;
   font-style: normal;
@@ -245,7 +245,7 @@ header {
   padding: 20px;
 }
 .previewModal .previewDescription {
-  font-family: "SFUIText-Regular";
+  font-family: "SFUIText-Regular", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -265,7 +265,7 @@ header {
   padding: 20px;
 }
 .previewModal .previewPrice {
-  font-family: "SFUIDisplay-Bold";
+  font-family: "SFUIDisplay-Bold", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -275,7 +275,7 @@ header {
   color: #494949;
 }
 .previewModal .previewTags {
-  font-family: "SFUIText-Regular";
+  font-family: "SFUIText-Regular", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
