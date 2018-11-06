@@ -38,7 +38,7 @@ class App extends Component {
               price: "14.0",
               tags: "V",
               image: "/LMO/7.jpg",
-              description: "vanilla pannacotta, toasted granola, goji berries, hazelnut..."
+              description: "vanilla pannacotta, toasted granola, goji berries, hazelnut, fresh seasonal fruits, shaved coconut, blueberry compote"
             },
             {
               id: "3",
@@ -54,7 +54,7 @@ class App extends Component {
               price: "16.5",
               tags: "V",
               image: "/LMO/7.jpg",
-              description: "minted pea & avocado smash, feta, poached egg, crispy quinoa, radish, pumpkin hummus..."
+              description: "minted pea & avocado smash, feta, poached egg, crispy quinoa, radish, pumpkin hummus, chilli lime, sumac salt, sourdough"
             },
             {
               id: "5",
@@ -62,7 +62,7 @@ class App extends Component {
               price: "16.5",
               tags: "V",
               image: "/LMO/6.jpg",
-              description: "kimchi, charred sweet corn, house relish, pickled fennel, dukkah..."
+              description: "kimchi, charred sweet corn, house relish, pickled fennel, dukkah, turmeric yogurt, chives, poached eggs"
             },
             {
               id: "6",
@@ -70,7 +70,7 @@ class App extends Component {
               price: "16.0",
               tags: "V, GF",
               image: "/LMO/7.jpg",
-              description: "spiced roasted chickpea, avocado, grilled broccolini & kale, edamame..."
+              description: "spiced roasted chickpea, avocado, grilled broccolini & kale, edamame, quinoa, beetroot hummus, chilli lime, coriander, almonds, ginger sauce, poached egg. Add slow roasted lamb (+3.0)"
             },
             {
               id: "7",
@@ -86,7 +86,7 @@ class App extends Component {
               price: "16.5",
               tags: "",
               image: "/LMO/9.jpg",
-              description: "poached chicken, ras-el-hanout spices, freekeh & wild rice, kalamata olive, cherry tomato..."
+              description: "grilled haloumi, ancient grains, roasted cauliflower, sweet potato, shredded kale, babaganoush, dukkah, baby spinach, poached egg. Add pulled pork (+3.0)"
             },
             {
               id: "9",
@@ -94,7 +94,7 @@ class App extends Component {
               price: "18.0",
               tags: "",
               image: "/LMO/8.jpg",
-              description: "slow cooked honey braised lamb, freekeh & mint tabouleh..."
+              description: "slow cooked honey braised lamb, freekeh & mint tabouleh, white sourdough green leaves, cumin tzaziki, dates, dukkah, grilled flatbread"
             },
             {
               id: "10",
@@ -102,7 +102,7 @@ class App extends Component {
               price: "14.5",
               tags: "",
               image: "/LMO/7.jpg",
-              description: "chorizo & chilli scramble, manchego, confit tomato, kale pesto, rocket..."
+              description: "chorizo & chilli scramble, manchego, confit tomato, kale pesto, rocket, coriander, sourdough"
             },
             {
               id: "11",
@@ -110,7 +110,7 @@ class App extends Component {
               price: "17.0",
               tags: "",
               image: "/LMO/8.jpg",
-              description: "chilli baked beans, black pudding, feta, confit tomato, fried egg..."
+              description: "chilli baked beans, black pudding, feta, confit tomato, fried egg, sourdough"
             },
             {
               id: "12",
@@ -118,7 +118,7 @@ class App extends Component {
               price: "17.0",
               tags: "",
               image: "/LMO/13.jpg",
-              description: "spiced pulled pork, apple cider & beetroot hollandaise..."
+              description: "spiced pulled pork, apple cider & beetroot hollandaise, poached eggs, spinach, brioche bun"
             },
           ]
         },
@@ -131,7 +131,7 @@ class App extends Component {
               price: "17.5",
               tags: "",
               image: "/LMO/14.jpg",
-              description: "8hr beef brisket, aged cheddar, house slaw, chipotle mayo..."
+              description: "8hr beef brisket, aged cheddar, house slaw, chipotle mayo, gherkins, rye sourdough"
             },
             {
               id: "14",
@@ -139,7 +139,7 @@ class App extends Component {
               price: "19.5",
               tags: "",
               image: "/LMO/7.jpg",
-              description: "grass fed beef, crispy bacon, smoked cheese, tomato, bourbon..."
+              description: "grass fed beef, crispy bacon, smoked cheese, tomato, bourbon caramelised onion, pickle, Dijon, lettuce, brioche bun served with fries or sweet potato fries"
             },
             {
               id: "15",
@@ -147,7 +147,7 @@ class App extends Component {
               price: "19.0",
               tags: "",
               image: "/LMO/8.jpg",
-              description: "cajun spiced crispy chicken, house slaw, jalapeno, chipotle..."
+              description: "cajun spiced crispy chicken, house slaw, jalapeno, chipotle mayo, lime, pickle, lettuce, brioche bun served with fries or sweet potato fries"
             }
           ]
         }

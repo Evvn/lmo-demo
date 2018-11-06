@@ -60,6 +60,17 @@ class MenuItem extends React.Component {
     }
   }
 
+  trimDescription(d) {
+    let description = d
+
+    if ( description.length > 60) {
+      description = description.substring(0,60).trim() + "..."
+      return description
+    } else {
+      return description
+    }
+  }
+
   render() {
 
     let id = this.props.id
@@ -68,6 +79,7 @@ class MenuItem extends React.Component {
     let tags = this.props.tags
     let image = this.props.image
     let description = this.props.description
+    let trimmedDescription = this.trimDescription(description)
     let style = {
       backgroundImage: 'url(' + image + ')',
       backgroundSize: 'cover'
@@ -93,7 +105,7 @@ class MenuItem extends React.Component {
             <div className="rightBox" id={ id }>
               <h3 className="title" id={ id }>{ name }</h3>
 
-              <p className="bodyText" id={ id }>{ description }</p>
+              <p className="bodyText" id={ id }>{ trimmedDescription }</p>
 
               <div className="info" id={ id }>
                 <span className="price" id={ id }>{ price }</span>
@@ -134,7 +146,7 @@ class MenuItem extends React.Component {
             <div className="leftBox" id={ id }>
               <h3 className="title" id={ id }>{ name }</h3>
 
-              <p className="bodyText" id={ id }>{ description }</p>
+              <p className="bodyText" id={ id }>{ trimmedDescription }</p>
 
               <div className="info" id={ id }>
                 <span className="price" id={ id }>{ price }</span>
