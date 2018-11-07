@@ -17,11 +17,11 @@ class PreviewItem extends React.Component {
 
   componentDidMount() {
     document.querySelector('.menu').classList.remove('slideInLeft')
-    document.querySelector('.hamburger').classList.add('transparent')
+    document.querySelector('.hamburger').classList.add('hidden')
   }
 
   componentWillUnmount() {
-    document.querySelector('.hamburger').classList.remove('transparent')
+    document.querySelector('.hamburger').classList.remove('hidden')
   }
 
   render() {

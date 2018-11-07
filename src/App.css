@@ -70,7 +70,7 @@ body {
 
 .slideOutLeft {
   -webkit-transform: translateX(0%);
-  -webkit-animation: slideOutLeft 0.4s ease-in-out forwards;
+  -webkit-animation: slideOutLeft 0.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes slideOutLeft {
@@ -80,7 +80,7 @@ body {
 }
 .slideInLeft {
   -webkit-transform: translateX(-100%);
-  -webkit-animation: slideInLeft 0.4s ease-in-out forwards;
+  -webkit-animation: slideInLeft 0.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes slideInLeft {
@@ -90,7 +90,7 @@ body {
 }
 .slideOutRight {
   -webkit-transform: translateX(0%);
-  -webkit-animation: slideOutRight 0.4s ease-in-out forwards;
+  -webkit-animation: slideOutRight 0.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes slideOutRight {
@@ -100,7 +100,7 @@ body {
 }
 .slideInRight {
   -webkit-transform: translateX(100%);
-  -webkit-animation: slideInRight 0.4s ease-in-out forwards;
+  -webkit-animation: slideInRight 0.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes slideInRight {
@@ -120,7 +120,7 @@ header {
   background-color: white;
   z-index: 5;
   padding: 15px;
-  transition: 0.5s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 
 .menuOpen {
@@ -318,37 +318,6 @@ header {
   font-size: 14px;
   margin-bottom: 25px;
 }
-.cta input {
-  width: 335px;
-  height: 55px;
-  border-radius: 25px;
-  border: solid 2px #FC4250;
-  padding: 20px;
-  font-family: "SFUIDisplay", "Helvetica", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #FC4250;
-  transition: 0.2s ease all;
-}
-.cta input:focus {
-  outline: none;
-}
-.cta ::placeholder {
-  font-family: "SFUIDisplay", "Helvetica", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #FC4250;
-}
 
 footer {
   display: flex;
@@ -365,6 +334,106 @@ footer {
   text-align: center;
   color: white;
   background-color: #FC4250;
+}
+
+::-webkit-input-placeholder {
+  color: #FC4250;
+}
+
+.ctaBtn {
+  background: white;
+  color: #FC4250;
+  border: 2px solid #FC4250;
+  font-weight: bold;
+  border-radius: 25px;
+  line-height: 50px;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  transition: width 0.2s ease-in-out;
+  cursor: pointer;
+}
+.ctaBtn .hide {
+  display: none;
+}
+.ctaBtn form {
+  display: flex;
+  margin-top: -2px;
+}
+.ctaBtn span {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  animation: fadeBtnIn 0.3s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.ctaBtn .input {
+  display: none;
+  opacity: 0;
+  flex: 3;
+  text-align: left;
+}
+.ctaBtn .input input {
+  font-size: 14px;
+  border: 0;
+  width: 240px;
+  margin: 16px 0 0 25px;
+  outline: none;
+  color: #FC4250;
+}
+.ctaBtn .button {
+  display: none;
+  opacity: 0;
+  flex: 1;
+}
+.ctaBtn .button button {
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  float: right;
+  padding: 0 15px;
+  height: 40px;
+  background: #FC4250;
+  border-radius: 25px;
+  color: white;
+  border: 0;
+  margin: 5px 3px 5px 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.ctaBtn .button button:disabled {
+  opacity: 0.7;
+  color: white;
+}
+.ctaBtn.sent {
+  cursor: default;
+}
+.ctaBtn.active {
+  width: 350px;
+  text-align: left;
+  transition: width 0.2s ease-in-out;
+  cursor: default;
+}
+.ctaBtn.active span {
+  display: none;
+}
+.ctaBtn.active .input, .ctaBtn.active .button {
+  display: block;
+  animation: fadeBtnIn 0.3s ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBtnIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

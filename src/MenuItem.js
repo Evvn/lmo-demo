@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import PreviewItem from './PreviewItem.js'
+import Swipe from 'react-easy-swipe'
 
 class MenuItem extends React.Component {
 
@@ -13,21 +14,11 @@ class MenuItem extends React.Component {
     }
 
     this.handleClick = this.handleClick.bind(this)
+    this.onSwipeRight = this.onSwipeRight.bind(this)
   }
 
   handleClick(e) {
     let id = e.target.id
-
-    // if (document.body.querySelector('.previewModal') !== null && document.body.querySelector('.previewModal').className === 'previewModal hack slideOutRight') {
-    //   console.log('HACK');
-    //   document.body.querySelector('.previewModal').className = 'previewModal'
-    //   this.setState(
-    //     {
-    //       previewOpen: !this.state.previewOpen,
-    //       id: id
-    //     })
-    //     return
-    // }
 
     if (document.body.querySelector('.previewModal') !== null) {
       document.body.querySelector('.previewModal').classList.remove('slideInRight')
@@ -47,7 +38,7 @@ class MenuItem extends React.Component {
             }
           }
         )
-      }, 400)
+      }, 200)
     } else {
       this.setState(
         {
@@ -69,6 +60,26 @@ class MenuItem extends React.Component {
     } else {
       return description
     }
+  }
+
+  onSwipeRight() {
+    document.body.querySelector('.previewModal').classList.remove('slideInRight')
+    document.body.querySelector('.previewModal').classList.add('slideOutRight')
+    document.querySelector('.menu').classList.add('slideInLeft')
+    setTimeout(() => {
+      this.setState(
+        {
+          previewOpen: !this.state.previewOpen
+        }, () => {
+          document.querySelector('.menu').classList.toggle('slideOutLeft')
+          if (this.state.previewOpen) {
+            document.body.classList.add('lockScroll')
+          } else {
+            document.body.classList.remove('lockScroll')
+          }
+        }
+      )
+    }, 200)
   }
 
   render() {
@@ -114,16 +125,22 @@ class MenuItem extends React.Component {
             </div>
 
             { this.state.previewOpen ?
-              ReactDom.createPortal(<PreviewItem
-                previewOpen = { this.state.previewOpen }
-                id = { this.state.id }
-                name = { name }
-                price = { price }
-                tags = { tags }
-                image = { image }
-                description = { description }
-                style = { style }
-              />, document.querySelector('.App'))
+              ReactDom.createPortal(
+                <Swipe
+                  onSwipeRight = { this.onSwipeRight }
+                >
+                  <PreviewItem
+                  previewOpen = { this.state.previewOpen }
+                  id = { this.state.id }
+                  name = { name }
+                  price = { price }
+                  tags = { tags }
+                  image = { image }
+                  description = { description }
+                  style = { style }
+                />
+              </Swipe>
+              , document.querySelector('.App'))
             :
               null
             }
@@ -155,16 +172,22 @@ class MenuItem extends React.Component {
             </div>
 
             { this.state.previewOpen ?
-              ReactDom.createPortal(<PreviewItem
-                previewOpen = { this.state.previewOpen }
-                id = { this.state.id }
-                name = { name }
-                price = { price }
-                tags = { tags }
-                image = { image }
-                description = { description }
-                style = { style }
-              />, document.querySelector('.App'))
+              ReactDom.createPortal(
+                <Swipe
+                  onSwipeRight = { this.onSwipeRight }
+                >
+                  <PreviewItem
+                  previewOpen = { this.state.previewOpen }
+                  id = { this.state.id }
+                  name = { name }
+                  price = { price }
+                  tags = { tags }
+                  image = { image }
+                  description = { description }
+                  style = { style }
+                />
+              </Swipe>
+              , document.querySelector('.App'))
             :
               null
             }

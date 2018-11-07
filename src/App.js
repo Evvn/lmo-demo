@@ -5,7 +5,6 @@ import Section from './Section.js'
 import MenuItem from './MenuItem.js'
 import Footer from './Footer.js'
 
-
 class App extends Component {
   constructor(props) {
     super(props)
